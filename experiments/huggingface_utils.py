@@ -1,4 +1,5 @@
-from datasets import load_dataset, load_metric, Sequence, ClassLabel, DatasetDict
+from datasets import load_dataset, Sequence, ClassLabel, DatasetDict
+from evaluate import load as load_metric
 import transformers
 from transformers import AutoModelForTokenClassification, AutoTokenizer, Trainer, TrainingArguments, pipeline, DataCollatorForTokenClassification
 import numpy as np
